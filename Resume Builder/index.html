@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV BUILDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>RESUME BUILDER <br> BY <BR> AREEBA AHEMED KHAN</h1>
+    <form action="resumeform">
+
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name = "name" required > <br>
+            
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" email = "email" required > <br>
+
+            <label for="phone">PHONE:</label>
+            <input type="phone" id="phone" phone = "phone" required > <br>
+
+        </fieldset>
+    
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <label for="education">EDUCATION:</label>
+           <textarea name="education" id="educaton" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <label for="experience">EXPERIENCE:</label>
+           <textarea name="experience" id="experience" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>SKILL</legend>
+            <label for="skill">SKILL:</label>
+           <textarea name="skill" id="skill" rows="4" required></textarea> <br>
+        </fieldset>
+<button type="submit"> RESUME GENERATED</button>
+
+    </form>
+  <div id="resumeoutput">
+      <!-- resume will generated blow -->
+  </div>
+</body>
+<script src="script.ts"></script>
+</html>
